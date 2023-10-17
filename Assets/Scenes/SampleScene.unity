@@ -1039,8 +1039,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 732206875}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.042205933, y: -0.07082555, z: -0.002999484, w: 0.9965909}
-  m_LocalPosition: {x: 0.4314928, y: 1.0874729, z: -3.702732}
+  m_LocalRotation: {x: -0.04273962, y: 0, z: 0, w: 0.99908626}
+  m_LocalPosition: {x: -0.068507195, y: 1.0874729, z: -3.702732}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1057,6 +1057,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8893456707679645059, guid: 03e647616d35a7e43933a492f53d0822, type: 3}
   m_PrefabInstance: {fileID: 1050151578040625258}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &797905561 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6466289307128654642, guid: 03e647616d35a7e43933a492f53d0822, type: 3}
+  m_PrefabInstance: {fileID: 1050151578040625258}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43cc40d75b44cb54c874babe1decb8ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &852128013
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1906,8 +1917,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.042205933, y: -0.07082555, z: -0.002999484, w: 0.9965909}
-  m_LocalPosition: {x: 0.4314928, y: 1.0874729, z: -3.702732}
+  m_LocalRotation: {x: -0.04273962, y: 0, z: 0, w: 0.99908626}
+  m_LocalPosition: {x: -0.068507195, y: 1.0874729, z: -3.702732}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3551,8 +3562,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd6043bde05a7fc4cba197d06915c1e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Damping: {x: 0.1, y: 0.5, z: 0.3}
-  ShoulderOffset: {x: 0.5, y: -0.7, z: 0}
+  Damping: {x: 0.5, y: 0.5, z: 0.5}
+  ShoulderOffset: {x: 0, y: -0.7, z: 0}
   VerticalArmLength: 0.4
   CameraSide: 1
   CameraDistance: 3.5
@@ -5457,8 +5468,9 @@ GameObject:
   m_Component:
   - component: {fileID: 2978503865454494167}
   - component: {fileID: 9202518323981900717}
+  - component: {fileID: 9202518323981900718}
   m_Layer: 0
-  m_Name: Sporty Granny
+  m_Name: PlayerModel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8625,6 +8637,20 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &9202518323981900718
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2458426431906732909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1e3e5cd229fa214f8f4df9dddac2c26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player_Movement: {fileID: 797905561}
+  groundDetector: {fileID: 2058260493}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
